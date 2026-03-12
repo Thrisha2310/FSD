@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Selector Forms</title>
+  <style>
+    /* =========================
+       SIMPLE SELECTORS
+       ========================= */
+
+    /* Element selector */
+    p {
+      color: blue;
+    }
+
+    /* ID selector */
+    #mainTitle {
+      color: red;
+      text-align: center;
+    }
+
+    /* Class selector */
+    .highlight {
+      background-color: lightyellow;
+      font-size: 18px;
+    }
+
+    /* Universal selector */
+    * {
+      font-family: Arial;
+    }
+
+    /* =========================
+       COMBINATORY SELECTORS
+       ========================= */
+
+    /* Descendant selector */
+    div p {
+      color: green;
+    }
+
+    /* Child selector */
+    div > h3 {
+      color: purple;
+    }
+
+    /* Adjacent sibling selector */
+    h2 + p {
+      color: orange;
+    }
+
+    /* General sibling selector */
+    h2 ~ span {
+      color: brown;
+    }
+
+    /* =========================
+       PSEUDO-CLASS SELECTORS
+       ========================= */
+
+    a:hover {
+      color: red;
+    }
+
+    button:active {
+      background-color: yellow;
+    }
+
+    /* =========================
+       PSEUDO-ELEMENT SELECTORS
+       ========================= */
+
+    .para::first-letter {
+      font-size: 30px;
+      color: red;
+    }
+
+    .para::first-line {
+      color: darkblue;
+    }
+
+    /* =========================
+       ATTRIBUTE SELECTOR
+       ========================= */
+
+    input[type="text"] {
+      background-color: lightblue;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1 id="mainTitle">CSS Selector Forms</h1>
+
+  <!-- Simple Selector -->
+  <p class="highlight">This is a simple selector example.</p>
+
+  <!-- Combinatory Selectors -->
+  <div>
+    <h3>Child Selector Example</h3>
+    <p>Descendant selector example.</p>
+  </div>
+
+  <h2>Sibling Selector</h2>
+  <p>Adjacent sibling selector example.</p>
+  <span>General sibling selector example.</span>
+
+  <!-- Pseudo-class Selector -->
+  <br>
+  <a href="style.css">click on this link</a><br><br>
+  <button>Click Me</button>
+
+  <!-- Pseudo-element Selector -->
+  <p class="para">
+    This paragraph demonstrates pseudo element selectors.
+  </p>
+
+  <!-- Attribute Selector -->
+  <input type="text" placeholder="Text input">
+  <input type="password" placeholder="Password">
+
+</body>
+</html>

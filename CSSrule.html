@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background Image Example</title>
+  <style>
+    body {
+      margin: 0;
+      height: 200vh; /* makes page scrollable */
+      font-family: Arial, sans-serif;
+
+      /* Background settings */
+      background-image: url("ktm.jpeg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;   /* stays in place when scrolling */
+      background-position: center 50%; /* halfway down, centered */
+      background-size: 600px auto;    /* adjust size as needed */
+
+      /* Flip background horizontally */
+      transform: scaleX(-1);
+    }
+
+    /* Flip text back to normal so only image is flipped */
+    .content {
+      transform: scaleX(-1);
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Scroll Down</h1>
+    <p>
+      This is some sample text. The background image stays fixed halfway down the page
+      and is flipped horizontally, while the text remains normal.
+    </p>
+    <p>
+      Keep scrolling to see the effect.
+    </p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration form</title>
+</head>
+<body>
+
+<h2 align="center">Student Registration Form</h2>
+
+<form>
+    <table align="center" cellpadding="5" cellspacing="0" border="1">
+        
+        <!-- Text Field -->
+        <tr>
+            <td>Name</td>
+            <td>
+                <input type="text" name="name" placeholder="Enter your name">
+            </td>
+        </tr>
+
+        <!-- Password Field -->
+        <tr>
+            <td>Password</td>
+            <td>
+                <input type="password" name="password">
+            </td>
+        </tr>
+
+        <!-- Number Field -->
+        <tr>
+            <td>Mobile Number</td>
+            <td>
+                <input type="number" name="mobile">
+            </td>
+        </tr>
+
+        <!-- Date of Birth Field -->
+        <tr>
+            <td>Date of Birth</td>
+            <td>
+                <input type="date" name="dob">
+            </td>
+        </tr>
+
+        <!-- Radio Buttons -->
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </td>
+        </tr>
+
+        <!-- Checkboxes -->
+        <tr>
+            <td>Hobbies</td>
+            <td>
+                <input type="checkbox" name="hobby" value="Reading"> Reading
+                <input type="checkbox" name="hobby" value="Sports"> Sports
+                <input type="checkbox" name="hobby" value="Music"> Music
+            </td>
+        </tr>
+
+        <!-- Select and Option -->
+        <tr>
+            <td>Course</td>
+            <td>
+                <select name="course">
+                    <option value="">--Select Course--</option>
+                    <option value="BCA">BCA</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="BCom">B.Com</option>
+                    <option value="BA">B.A</option>
+                </select>
+            </td>
+        </tr>
+
+        <!-- Text Area -->
+        <tr>
+            <td>Address</td>
+            <td>
+                <textarea name="address" rows="4" cols="30"></textarea>
+            </td>
+        </tr>
+
+        <!-- Buttons -->
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>
